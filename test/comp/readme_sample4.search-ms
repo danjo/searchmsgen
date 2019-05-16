@@ -1,0 +1,66 @@
+﻿<?xml version="1.0"?>
+
+
+<persistedQuery version="1.0">
+	<viewInfo viewMode="icons" iconSize="48">
+		<visibleColumns>
+			<column viewField="System.ItemNameDisplay" />
+			<column viewField="System.DateModified" />
+			<column viewField="System.ItemTypeText" />
+			<column viewField="System.Size" />
+			<column viewField="System.ItemFolderPathDisplayNarrow" />
+		</visibleColumns>
+		<sortList>
+			<sort viewField="System.ItemTypeText" direction="ascending" />
+			<sort viewField="System.ItemNameDisplay" direction="ascending" />
+		</sortList>
+	</viewInfo>
+	<query>
+		<conditions>
+			<condition type="andCondition">
+				<condition type="leafCondition"
+					property="System.Kind"
+					operator="eq"
+					propertyType="string"
+					value="picture">
+					<attributes />
+				</condition>
+				<condition type="leafCondition"
+					property="System.Size"
+					operator="gte"
+					propertyType="int64"
+					value="1048576"
+					localeName="">
+					<attributes />
+				</condition>
+				<condition type="notCondition">
+					<condition type="orCondition">
+						<condition type="leafCondition"
+							property="System.FileExtension"
+							operator="starts with"
+							propertyType="string"
+							value=".gif"
+							localeName="">
+							<attributes />
+						</condition>
+						<condition type="leafCondition"
+							property="System.FileExtension"
+							operator="starts with"
+							propertyType="string"
+							value=".tiff"
+							localeName="">
+							<attributes />
+						</condition>
+					</condition>
+				</condition>
+			</condition>
+		</conditions>
+		<kindList>
+			<kind name="item" />
+		</kindList>
+		<scope>
+			<include path="c:\Users\someUser" nonRecursive="false" />
+			<exclude path="c:\Users\someUser\AppData" nonRecursive="false" />
+		</scope>
+	</query>
+</persistedQuery>

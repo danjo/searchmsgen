@@ -1,0 +1,6 @@
+conditions:
+  date_between: { start: 2018-01-01, end: 2018-12-31 }
+
+scopes:
+  - [ include, "c:/Users/someUser" ]
+  - [ exclude, "c:/Users/someUser/AppData" ]

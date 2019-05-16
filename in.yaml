@@ -1,0 +1,15 @@
+viewMode:
+  details
+
+conditions:
+  and:
+    - picture
+    - size: { comparator: gte, size: 1MiB }
+    - not:
+      - or:
+        - extension: { value: .gif }
+        - extension: { value: .tiff }
+
+scopes:
+  - [ include, C:\dev ]
+  - [ exclude, C:/dev/pull, false ]

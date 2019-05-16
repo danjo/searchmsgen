@@ -1,0 +1,15 @@
+viewMode:
+  details
+iconSize:
+  16
+columns:
+  - { viewField: System.ItemNameDisplay }
+  - { viewField: System.DateModified }
+sorts:
+  - { viewField: System.DateModified, direction: descending }
+conditions:
+  date_recent: { days: 14 }
+kinds:
+  - item
+scopes:
+  - [ include, "c:/Users/someUser", false ]
