@@ -1,0 +1,5 @@
+conditions:
+  picture:
+scopes:
+  - [ include, "c:/Users/someUser" ]
+  - [ exclude, "c:/Users/someUser/AppData" ]

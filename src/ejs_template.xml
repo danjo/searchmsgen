@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!-- searchmsgen -->
+<!-- <%= ((d) => d.toLocaleDateString() + " " + d.toLocaleTimeString())(new Date()) %> -->
+<persistedQuery version="1.0">
+	<viewInfo viewMode="<%= viewMode %>" iconSize="<%= iconSize %>">
+		<visibleColumns>
+		<% columns.forEach(function(column){ %>
+			<column viewField="<%= column.viewField %>" />
+		<% }); %>
+		</visibleColumns>
+		<sortList>
+		<% sorts.forEach(function(sort){ %>
+			<sort viewField="<%= sort.viewField %>" direction="<%= sort.direction %>" />
+		<% }); %>
+		</sortList>
+	</viewInfo>
+	<query>
+		<conditions>
+<%- generated_conditions %>
+		</conditions>
+		<kindList>
+		<% kinds.forEach(function(kind){ %>
+			<kind name="<%= kind %>" />
+		<% }); %>
+		</kindList>
+		<scope>
+		<% scopes.forEach(function(scope){ %>
+			<<%= scope[0] %> path="<%= scope[1] %>" nonRecursive="<%= scope[2] %>" />
+		<% }); %>
+		</scope>
+	</query>
+</persistedQuery>

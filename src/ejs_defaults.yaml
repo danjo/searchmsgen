@@ -1,0 +1,25 @@
+viewMode:
+  tiles
+iconSize:
+  48
+
+columns:
+  - { viewField: System.ItemNameDisplay }
+  - { viewField: System.DateModified }
+  - { viewField: System.ItemTypeText }
+  - { viewField: System.Size }
+  - { viewField: System.ItemFolderPathDisplayNarrow }
+
+sorts:
+  - { viewField: System.ItemTypeText, direction: ascending }
+  - { viewField: System.ItemNameDisplay, direction: ascending }
+#  - { viewField: System.DateModified, direction: descending }
+
+#conditions:
+#  null
+
+kinds:
+  - item
+
+#scopes:
+#  null

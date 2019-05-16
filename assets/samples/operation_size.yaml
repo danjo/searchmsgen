@@ -1,0 +1,5 @@
+conditions:
+  size: { comparator: gte, size: 1MiB }
+scopes:
+  - [ include, "c:/Users/someUser" ]
+  - [ exclude, "c:/Users/someUser/AppData" ]

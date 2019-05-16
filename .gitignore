@@ -1,0 +1,9 @@
+/.vs
+/dist
+/node_modules
+/out
+/test/data
+/test/in
+/test/out
+out.search-ms
+smsgen.exe

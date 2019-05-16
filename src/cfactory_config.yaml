@@ -1,0 +1,84 @@
+and:
+  condition:
+    AndCondition
+
+or:
+  condition:
+    OrCondition
+
+not:
+  condition:
+    NotCondition
+
+picture:
+  condition:
+    LeafCondition
+  attribs:
+    [property, operator, propertyType, value]
+  defaults:
+    property: "System.Kind"
+    propertyType: "string"
+    operator: "eq"
+    value: "picture"
+
+extension:
+  condition:
+    LeafCondition
+  attribs:
+    [property, operator, propertyType, value, localeName]
+  defaults:
+    property: "System.FileExtension"
+    propertyType: "string"
+    operator: "starts with"
+    localeName: ""
+# value required
+
+word:
+  condition:
+    LeafCondition
+  attribs:
+    [property, operator, propertyType, value, localeName]
+  defaults:
+    property: "System.Generic.String"
+    propertyType: "string"
+    operator: "wordmatch"
+    localeName: ""
+# value required
+
+size:
+  condition:
+    LeafCondition
+  builder:
+    SizeBuilder
+  attribs:
+    [property, operator, propertyType, value, localeName]
+  defaults:
+    property: "System.Size"
+    propertyType: "int64"
+    localeName: ""
+
+date_recent:
+  condition:
+    LeafCondition
+  builder:
+    DateRecentBuilder
+  attribs:
+    [property, operator, propertyType, value, valuetype]
+  defaults:
+    property: "System.DateModified"
+    propertyType: "wstr"
+    operator: "imp"
+    valuetype: "System.StructuredQueryType.DateTime"
+
+date_between:
+  condition:
+    LeafCondition
+  builder:
+    DateBetweenBuilder
+  attribs:
+    [property, operator, propertyType, value, valuetype]
+  defaults:
+    property: "System.DateModified"
+    propertyType: "stringarray"
+    operator: "imp"
+    valuetype: "System.StructuredQueryType.DateTime"

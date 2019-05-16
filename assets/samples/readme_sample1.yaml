@@ -1,0 +1,4 @@
+conditions:
+  picture
+scopes:
+  - [ include, "c:/Users/someUser" ]

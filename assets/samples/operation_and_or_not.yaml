@@ -1,0 +1,11 @@
+viewMode:
+  icons
+conditions:
+  and:
+    - picture:
+    - size: { comparator: gte, size: 1MiB }
+    - not:
+        - extension: { value: .gif }
+scopes:
+  - [ include, "c:/Users/someUser" ]
+  - [ exclude, "c:/Users/someUser/AppData" ]

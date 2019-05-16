@@ -1,0 +1,5 @@
+conditions:
+  extension: { value: .xlsx }
+scopes:
+  - [ include, "c:/Users/someUser" ]
+  - [ exclude, "c:/Users/someUser/AppData" ]

@@ -1,0 +1,74 @@
+---
+todo
+
+cli
+document
+gui
+
+---
+converter
+
+validate by schema?
+
+---
+gui
+
+generate input form from schema?
+
+---
+refs
+
+https://docs.microsoft.com/en-us/windows/desktop/search/-search-savedsearchfileformat
+https://docs.microsoft.com/en-us/windows/desktop/lwef/-search-2x-wds-aqsreference
+https://docs.microsoft.com/en-us/windows/desktop/search/-search-federated-search-osdx-file
+https://docs.microsoft.com/en-us/dotnet/framework/winforms/controls/known-folder-guids-for-file-dialog-custom-places
+
+
+---
+
+
+viewMode:
+  - details
+  - icons
+  - tiles
+
+iconSize:
+  - 16
+  - 48
+  - 256
+
+columns:
+  - System.Search.Rank
+  - System.ItemNameDisplay
+  - System.DateCreated
+  - System.DateModified
+  - System.ItemTypeText
+  - System.Size
+  - System.ItemFolderPathDisplayNarrow
+
+conditions:
+  - type
+  - property
+  - operator
+  - propertyType
+  - value
+  - locale
+
+kinds:
+  - item
+  - document
+  - folder
+  - picture
+  - music
+  - video
+  - movie
+
+scopes:
+  tag:
+    - include
+    - exclude
+  nonRecursive:
+    - true
+    - false
+
+
