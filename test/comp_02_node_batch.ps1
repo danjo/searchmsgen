@@ -1,7 +1,7 @@
 cd ..
 
-$in = "test/in"
-$out = "test/out"
+$in = "test/out/comp/yaml"
+$out = "test/out/comp/sms"
 
 rm -Force -Recurse $out -ErrorAction Ignore
 mkdir $out | out-null

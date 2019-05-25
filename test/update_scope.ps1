@@ -1,18 +1,9 @@
-$target = "out"
+$target = "comp"
+$pwd = $(pwd).Path
 $replaces = @(
-	@("c:\\Users\\someUser", "c:\dev\vscode"),
-	@("C:\\Users\\someUser", "C:\dev\vscode")
+	@("c:\\Users\\someUser", "$pwd\data\someUser"),
+	@("C:\\Users\\someUser", "$pwd\data\someUser")
 )
-
-$orig = "$target/orig"
-$files = $(Get-ChildItem $target/*.search-ms)
-if((Test-Path $orig) -eq $false){
-	mkdir $orig | Out-Null
-}
-$files | % {
-	$name = $_.Name
-	cp $target/$name $orig/$name
-}
 
 $files = $(Get-ChildItem $target/*.search-ms)
 $files | % {
@@ -23,5 +14,6 @@ $files | % {
 		$data2 = $($data | % { $_ -replace $rep })
 		$data = $data2
 	}
-	$data | out-file $file -Encoding utf8
+	$toFile = $pwd + "/out/update_scope/" + $file.Name
+	$data | out-file $toFile -Encoding utf8
 }

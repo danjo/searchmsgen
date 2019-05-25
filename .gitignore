@@ -1,9 +1,8 @@
 /.vs
 /dist
 /node_modules
-/out
 /test/data
-/test/in
-/test/out
+out
+in.search-ms
 out.search-ms
 smsgen.exe

@@ -1,5 +1,5 @@
 $from = "../assets/samples"
-$to = "in"
+$to = "out/comp/yaml"
 
 rm -Force -Recurse $to -ErrorAction Ignore
 mkdir $to | out-null

@@ -1,16 +1,25 @@
 import * as fs from "fs";
+import * as path from "path";
 import * as js_yaml from "js-yaml";
 import { Converter } from "./converter";
 
 // console.log("start");
 
 // console.log(process.argv);
-if (process.argv.length !== 4) {
-    console.log("usage: smsgen.exe <input filepath> <output filepath>");
+let fin: string;
+let fout: string;
+
+if (process.argv.length == 4) {
+    fin = process.argv[2];
+    fout = process.argv[3];
+} else if (process.argv.length == 3) {
+    fin = process.argv[2];
+    fout = path.basename(fin, ".yaml") + ".search-ms";
+} else {
+    console.log("usage: smsgen.exe [input filepath] [output filepath]");
+    console.log("       smsgen.exe [input filepath]");
     process.exit(0);
 }
-let fin = process.argv[2];
-let fout = process.argv[3];
 // console.log(fin);
 // console.log(fout);
 

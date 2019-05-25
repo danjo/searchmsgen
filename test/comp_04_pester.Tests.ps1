@@ -1,9 +1,4 @@
-﻿#./01_copy_samples.ps1
-#./02_npm_build.ps1
-#./03_node_batch.ps1
-#./04_edit_gen.ps1
-
-$target = "out"
+﻿$target = "out/comp/sms"
 $comp = "comp"
 
 $target_files = @{}
