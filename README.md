@@ -18,7 +18,8 @@ may can use on Windows Vista or later.
 
 # CLI Usage
 1. smsgen.exe [input file] [output file]
-2. node out/app.js [input file] [output file]
+2. smsgen.exe [input file]  
+  for drag&drop. When drop "sample.yaml", generates as "sample.search-ms"
 
 # Input File Format
 YAML based text, is besed on:

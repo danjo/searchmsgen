@@ -1,4 +1,4 @@
-del -Recurse -Force "data"
+rm -Force -Recurse "data" -ErrorAction Ignore
 mkdir "data" | out-null
 
 $dir = "data/someUser"
