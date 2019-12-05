@@ -1,0 +1,11 @@
+viewMode:
+  details
+sorts:
+  - { viewField: System.DateModified, direction: descending }
+conditions:
+  and:
+    - extension: { value: .txt }
+    - date_recent: { days: 90 }
+scopes:
+  - [ include, "c:/Users/someUser/" ]
+  - [ exclude, "c:/Users/someUser/AppData" ]
