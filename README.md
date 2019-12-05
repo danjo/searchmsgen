@@ -9,10 +9,10 @@ So the program intend to help creating .search-ms files by easyer way.
 
 # Target Environments
 ## smsgen.exe
-tested Windows7 64bit
+tested Windows10 1903 64bit
 
 ## generated .search-ms files
-tested Windows7 64bit.  
+tested Windows10 64bit.  
 may can use on Windows Vista or later.
 
 
@@ -131,11 +131,11 @@ conditions has tree structure
             - extension: { value: .tiff }
 
 - conditions's element is just 1 condition operator
-- condition operator is mapping or scalar (String)
+- condition operator is mapping (Hash)  or scalar (String)
 - condition operator mapping's element is one of each below
   - child condition operators as sequence (Array)  
     and, or, not
-  - parameters of itself as mapping (Hash)  
+  - parameters of itself as mapping  
     size, extension, ...
   - none  
     picture, ...
@@ -201,3 +201,5 @@ have just 1 child operator
 - [YAML](https://yaml.org/)
 - [ejs](https://ejs.co/)
 - [js-yaml](https://github.com/nodeca/js-yaml)
+
+- [Change Search Results Default View Mode to Details instead of Content](https://www.winhelponline.com/blog/search-results-content-view-fix-details-windows-10/)

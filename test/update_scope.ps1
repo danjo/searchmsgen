@@ -5,6 +5,8 @@ $replaces = @(
 	@("C:\\Users\\someUser", "$pwd\data\someUser")
 )
 
+mkdir "out/update_scope" -ErrorAction Ignore
+
 $files = $(Get-ChildItem $target/*.search-ms)
 $files | % {
 	$file = $_

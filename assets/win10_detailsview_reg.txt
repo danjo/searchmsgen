@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+; https://www.winhelponline.com/blog/search-results-content-view-fix-details-windows-10/
+;
+;Fixes search results defaults to Content view.
+;Sets Details view as the default search results view for Generic folders.
+
+[-HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\BagMRU]
+
+[-HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags]
+
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{7fde1a1e-8b31-49a5-93b8-6be14cfa4943}]
+"LogicalViewMode"=dword:00000001
+"Mode"=dword:00000004
