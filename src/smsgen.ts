@@ -9,12 +9,14 @@ import { Converter } from "./converter";
 let fin: string;
 let fout: string;
 
-if (process.argv.length == 4) {
+if (process.argv.length === 4) {
     fin = process.argv[2];
     fout = process.argv[3];
-} else if (process.argv.length == 3) {
+} else if (process.argv.length === 3) {
     fin = process.argv[2];
-    fout = path.basename(fin, ".yaml") + ".search-ms";
+    let dir = path.dirname(fin);
+    let bname = path.basename(fin, ".yaml");
+    fout = `${dir}/${bname}.search-ms`;
 } else {
     console.log("usage: smsgen.exe [input filepath] [output filepath]");
     console.log("       smsgen.exe [input filepath]");
