@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+
+
+<persistedQuery version="1.0">
+	<viewInfo viewMode="details" iconSize="48">
+		<visibleColumns>
+			<column viewField="System.ItemNameDisplay" />
+			<column viewField="System.DateModified" />
+			<column viewField="System.ItemTypeText" />
+			<column viewField="System.Size" />
+			<column viewField="System.ItemFolderPathDisplayNarrow" />
+		</visibleColumns>
+		<sortList>
+			<sort viewField="System.DateModified" direction="descending" />
+		</sortList>
+	</viewInfo>
+	<query>
+		<conditions>
+			<condition type="andCondition">
+				<condition type="leafCondition"
+					property="System.FileExtension"
+					operator="starts with"
+					propertyType="string"
+					value=".txt"
+					localeName="">
+					<attributes />
+				</condition>
+				<condition type="leafCondition"
+					property="System.DateModified"
+					operator="imp"
+					propertyType="wstr"
+					value="R00UUUUUUUUZZXD-90NU"
+					valuetype="System.StructuredQueryType.DateTime">
+					<attributes />
+				</condition>
+			</condition>
+		</conditions>
+		<kindList>
+			<kind name="item" />
+		</kindList>
+		<scope>
+			<include path="c:\Users\someUser\" nonRecursive="false" />
+			<exclude path="c:\Users\someUser\AppData" nonRecursive="false" />
+		</scope>
+	</query>
+</persistedQuery>
