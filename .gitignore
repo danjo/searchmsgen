@@ -2,7 +2,8 @@
 /dist
 /node_modules
 /test/data
+/in.search-ms
+/out.search-ms
+/smsgen.exe
+/smsgen.zip
 out
-in.search-ms
-out.search-ms
-smsgen.exe
