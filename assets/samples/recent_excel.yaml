@@ -4,7 +4,10 @@ sorts:
   - { viewField: System.DateModified, direction: descending }
 conditions:
   and:
-    - extension: { value: .xlsx }
+    - or:
+      - extension: { value: .xlsx }
+      - extension: { value: .xls }
+      - extension: { value: .xlsm }
     - date_recent: { days: 90 }
 scopes:
   - [ include, "c:/Users/someUser/" ]
