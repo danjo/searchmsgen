@@ -17,13 +17,31 @@
 	<query>
 		<conditions>
 			<condition type="andCondition">
-				<condition type="leafCondition"
-					property="System.FileExtension"
-					operator="starts with"
-					propertyType="string"
-					value=".xlsx"
-					localeName="">
-					<attributes />
+				<condition type="orCondition">
+					<condition type="leafCondition"
+						property="System.FileExtension"
+						operator="starts with"
+						propertyType="string"
+						value=".xlsx"
+						localeName="">
+						<attributes />
+					</condition>
+					<condition type="leafCondition"
+						property="System.FileExtension"
+						operator="starts with"
+						propertyType="string"
+						value=".xls"
+						localeName="">
+						<attributes />
+					</condition>
+					<condition type="leafCondition"
+						property="System.FileExtension"
+						operator="starts with"
+						propertyType="string"
+						value=".xlsm"
+						localeName="">
+						<attributes />
+					</condition>
 				</condition>
 				<condition type="leafCondition"
 					property="System.DateModified"
