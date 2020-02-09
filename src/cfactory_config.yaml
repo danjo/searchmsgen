@@ -10,6 +10,17 @@ not:
   condition:
     NotCondition
 
+folder:
+  condition:
+    LeafCondition
+  attribs:
+    [property, operator, propertyType, value]
+  defaults:
+    property: "System.Kind"
+    propertyType: "string"
+    operator: "eq"
+    value: "folder"
+
 picture:
   condition:
     LeafCondition

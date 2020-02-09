@@ -22,6 +22,8 @@ $files = @(
 	"vid.mp4"
 	"vido1.mp4"
 	"vido2.mp4"
+	"folder2.zip"
+	"folder3.search-ms"
 )
 $files | %{ new-item "$dir/$_" } | out-null
 
@@ -42,5 +44,7 @@ $old1 = $now.AddDays(-10)
 $old2 = $now.AddDays(-30)
 $(get-item "$dir/vido1.mp4").LastWriteTime = $old1
 $(get-item "$dir/vido2.mp4").LastWriteTime = $old2
+
+mkdir "$dir/folder1"
 
 ls $dir
