@@ -11,8 +11,8 @@
 			]
 		},
 		{
-			"label": "nexe",
-			"command": "${workspaceFolder}/build_nexe.bat",
+			"label": "build dist",
+			"command": "${workspaceFolder}/build.ps1",
 			"type": "shell",
 			"problemMatcher": []
 		}
