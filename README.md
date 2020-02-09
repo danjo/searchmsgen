@@ -160,6 +160,12 @@ match file extension
 
 picture sort files like .jpg, .png
 
+### folder
+
+    folder
+
+folder sort items, folder, folder shortcut, zip...
+
 ### size
 
     size: { comparator: gte, size: 1MiB }
