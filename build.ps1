@@ -12,5 +12,6 @@ cp LICENSE.txt dist
 cp smsgen.exe dist
 
 mv dist smsgen
-Compress-Archive -Force smsgen smsgen.zip
+rm smsgen.zip -ErrorAction Ignore
+compress-archive smsgen smsgen.zip
 mv smsgen dist
