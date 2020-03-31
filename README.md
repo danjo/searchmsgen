@@ -164,7 +164,7 @@ picture sort files like .jpg, .png
 
     folder
 
-folder sort items, folder, folder shortcut, zip...
+folder sort items, folder, folder shortcut (.lnk), zip, so on.
 
 ### size
 
