@@ -102,7 +102,7 @@ conditions has tree structure, can present logical operation (and/or/not).
         - picture
         - size: { comparator: gte, size: 1MiB }
         - not:
-          - or
+          - or:
             - extension: { value: .gif }
             - extension: { value: .tiff }
     scopes:
@@ -126,7 +126,7 @@ conditions has tree structure
         - picture
         - size: { comparator: gte, size: 1MiB }
         - not:
-          - or
+          - or:
             - extension: { value: .gif }
             - extension: { value: .tiff }
 
@@ -164,7 +164,7 @@ picture sort files like .jpg, .png
 
     folder
 
-folder sort items, folder, folder shortcut, zip...
+folder sort items, folder, folder shortcut (.lnk), zip, so on.
 
 ### size
 
