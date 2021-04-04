@@ -7,7 +7,7 @@ if ( $? -eq $false ){
 
 # $env:HTTPS_PROXY = ""
 # https://github.com/nexe/nexe/releases/tag/v3.3.3
-nexe out/smsgen.js -r src/*.yaml -r src/*.xml -o smsgen.exe --target windows-x64-14.15.3
+nexe out/smsgen.js -r src/*.yaml -r src/*.xml -o smsgen.exe --target windows-x64-12.18.2
 if ( $? -eq $false ){
 	Write-Error "nexe"
 	exit 3
