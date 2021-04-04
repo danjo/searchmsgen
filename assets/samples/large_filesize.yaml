@@ -1,0 +1,12 @@
+viewMode:
+  details
+sorts:
+  - { viewField: System.DateModified, direction: descending }
+conditions:
+  and:
+    - size: { comparator: gte, size: 100MiB }
+    - not:
+      - extension: { value: .zip }
+scopes:
+  - [ include, "c:/Users/someUser" ]
+  - [ exclude, "c:/Users/someUser/AppData" ]
