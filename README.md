@@ -3,17 +3,16 @@
 # Description
 Windows .search-ms file generator.
 
-.search-ms file used to save explorer.exe search query as a file.  
+.search-ms file used to save explorer.exe search query as a file.
 the file format is XML based text, but difficult to read/edit by hand.  
 So the program intend to help creating .search-ms files by easyer way.
 
 # Target Environments
 ## smsgen.exe
-tested Windows10 1903 64bit
+tested Windows10 64bit
 
 ## generated .search-ms files
-tested Windows10 64bit.  
-may can use on Windows Vista or later.
+tested Windows10 64bit. may can use on Windows Vista or later.
 
 
 # CLI Usage
@@ -111,8 +110,8 @@ conditions has tree structure, can present logical operation (and/or/not).
 
 this query searches:
 - picture files, and...
-- size greater equal than 1MiB, and...
-- but excludes .gif, .tiff file extensions
+- size greater equal than 1MiB, but...
+- excludes .gif, .tiff file extensions
 
 
 
