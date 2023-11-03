@@ -1,8 +1,13 @@
 # build
-npm run-script build
+npm up
 if ( $? -eq $false ){
 	Write-Error "npm"
 	exit 1
+}
+npm run-script build
+if ( $? -eq $false ){
+	Write-Error "npm"
+	exit 2
 }
 
 # $env:HTTPS_PROXY = ""
