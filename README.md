@@ -9,10 +9,10 @@ So the program intend to help creating .search-ms files by easyer way.
 
 # Target Environments
 ## smsgen.exe
-tested Windows10 64bit
+tested Windows11 64bit
 
 ## generated .search-ms files
-tested Windows10 64bit. may can use on Windows Vista or later.
+tested Windows11 64bit. may can use on Windows Vista or later.
 
 
 # CLI Usage
